@@ -1,0 +1,995 @@
+{
+    "Length": {
+        "Representations": [
+            "Length (l) [scalar] [state]",
+            "Radius (r) [scalar] [state]",
+            "Distance (d) [scalar] [path]",
+            "Displacement (Δx) [vector] [state]",
+            "Position (s) [vector] [state]",
+            "Wavelength (λ) [scalar] [state]",
+            "Amplitude (A) [scalar] [state]",
+            "Arc length (s) [scalar] [state]"
+        ],
+        "Units": [
+            "Meter (m)",
+            "Angstrom (Å) = 0.0000000001 m (1.0·10⁻¹¹ m)",
+            "Hand (?) = 0.1016 m",
+            "Inch (in) = 0.0254 m",
+            "Foot (ft) = 0.3048 m",
+            "Smoot (?) = 1.702 m",
+            "Fathom (?) = 1.8288 m",
+            "Mile (mi) = 1609.34 m",
+            "Nautical Mile (?) = 1852 m",
+            "Astronomical unit (au) = 149597870700 m (1.5·10¹¹ m)",
+            "Lightyear (ly) = 9460730472580800 m (9.5·10¹⁵ m)"
+        ],
+        "Derived from": [
+            "[[Length]] = ∫ [[Velocity]] (d [[Time]])",
+            "[[Length]] = [[Length|Radius]] · [[Angle]]"
+        ],
+        "Part of": [
+            "[[Area]] = [[Length]] · [[Length]]",
+            "[[Volume]] = [[Area]] · [[Length]]",
+            "[[Velocity]] = [[Length]] / [[Time]]",
+            "[[Angle]] = [[Length]] / [[Length]]",
+            "[[Energy]] = ∫ [[Force]] (d [[Length]])"
+        ],
+        "Used in": [
+            "[[Coulomb's Law]]"
+        ],
+        "Examples": [
+            "0.83\t\taverage human step length",
+            "1.8\t\tlength of DNA strands of human genome",
+            "2.5\t\tjavelin length",
+            "104.8\t\tworld record javelin throw",
+            "109.7\t\tlength of US football field",
+            "4830\t\tdistance to horizon (at elevation 0)",
+            "4 e7\t\tequatorial circumference of the earth",
+            "3.85 e8\t\tdistance to the moon",
+            "1.5 e11\t\tdistance to the sun",
+            "8.8 e26\t\tdiameter of the observable universe",
+            "Depth of Earth's ocean:",
+            "< 200\t\tSunlight Zone",
+            "< 1000\t\tTwilight Zone",
+            "< 4000\t\tMidnight Zone",
+            "< 6000\t\tThe Abyss",
+            "< 11000\t\tTrenches"
+        ]
+    },
+    "Mass": {
+        "Representations": [
+            "Mass (m) [scalar] [state]"
+        ],
+        "Units": [
+            "Kilogram (kg)",
+            "Carat (ct) =  0.0002 kg",
+            "Pound-mass (lb_{m}) = 0.453592 kg",
+            "\t1 kg = 2.2046 lb_{m}",
+            "Short ton (ton (US)) = 907.18474 kg",
+            "Long ton (ton (UK)) = 1016.047 kg",
+            "Tonne (tonne) = 1000 kg"
+        ],
+        "Derived from": [
+            "[[Mass]] = [[Volumetric Mass Density]] * [[Volume]]",
+            "[[Mass]] = [[Mass Flow]] · [[Time]]"
+        ],
+        "Part of": [
+            "[[Volumetric Mass Density]] = [[Mass]] / [[Volume]]",
+            "[[Force]] = [[Mass]] · [[Acceleration]]",
+            "[[Molar Mass]] = ([[Mass]] / 1000) / [[Amount]]",
+            "[[Mass Flow]] = [[Mass]] / [[Time]]",
+            "[[Velocity]] = [[Momentum]] / [[Mass]]"
+        ],
+        "Used in": [],
+        "Examples": [
+            "680 g\t1.5 lbs\tNalgene with 500 mL of water",
+            "1200 g\t2.6 lbs\tNalgene with 1000 mL of water"
+        ]
+    },
+    "Time": {
+        "Representations": [
+            "Time (t) [scalar] [state]",
+            "Period (T)"
+        ],
+        "Units": [
+            "Second (s)",
+            "Minute (min) = 60 s",
+            "Hour (hr) = 3600 s (60 min)",
+            "Day (day) = 86400 s (1440 min) (24 hr)",
+            "Year (yr) = 31557600 s (525960 min) (8766 hr) (365.25 day)"
+        ],
+        "Derived from": [
+            "[[Time]] = [[Energy]] / ([[Current]] · [[Voltage]])",
+            "[[Time]] = [[Resistance]] · [[Capacitance]]",
+            "[[Time]] = 1 / [[Frequency]]",
+            "[[Time]] = [[Amount]] / [[Molar Flow]]",
+            "[[Time]] = [[Mass]] / [[Mass Flow]]"
+        ],
+        "Part of": [
+            "[[Velocity]] = [[Length]] / [[Time]]",
+            "[[Angular Velocity]] = [[Angle]] / [[Time]]",
+            "[[Acceleration]] = [[Velocity]] / [[Time]]",
+            "[[Angular Acceleration]] = [[Angular Velocity]] / [[Time]]",
+            "[[Power]] = [[Energy]] / [[Time]]",
+            "[[Frequency]] = 1 / [[Time]]",
+            "[[Charge]] = [[Current]] · [[Time]]",
+            "[[Molar Flow]] = [[Amount]] / [[Time]]",
+            "[[Mass Flow]] = [[Mass]] / [[Time]]"
+        ],
+        "Used in": [],
+        "Examples": [
+            "5200 years\t\tage of writing technology",
+            "25 thousand years\tage of human settlement",
+            "200 million years\tage of homo sapiens",
+            "4.54 billion years\tage of the earth",
+            "13.772 billion years\tage of the universe"
+        ]
+    },
+    "Temperature": {
+        "Representations": [
+            "Temperature (T) [scalar] [state]"
+        ],
+        "Units": [
+            "Kelvin (K)",
+            "Celsius (ºC) = (K - 273.15)",
+            "\tK = (ºC + 273.15)",
+            "Fahrenheit (ºF) = (((K - 273.15) · 1.8) + 32)",
+            "\tK = (((F - 32) / 1.8) + 273.15)",
+            "Rankine (ºR) = (K · 1.8)",
+            "\tK = (ºR / 1.8)"
+        ],
+        "Derived from": [],
+        "Used in": [
+            "[[Gibbs Free Energy]]"
+        ],
+        "Examples": [
+            "1.42 E33 K\tPlanck temperature",
+            "6273.15 K\tSurface of the Sun",
+            "4477.59 K\tCore of the Earth",
+            "3773.15 K\tCarbon melts/freezes",
+            "374.15 K\tAverage temperature of the light side of Earth's moon",
+            "373.15 K\tWater boils/condenses",
+            "310.15 K\tHuman body temperature",
+            "273.15 K\tWater melts/freezes",
+            "255.37 K\tBrine melts/freezes",
+            "184.15 K\tLowest recorded air temperature on Earth",
+            "89.15 K \tAverage temperature of the dark side of the Earth's moon",
+            "0 K\t\tAbsolute zero"
+        ],
+        "Part of": [
+            "[[Entropy]] = [[Energy]] / [[Temperature]]"
+        ]
+    },
+    "Current": {
+        "Representations": [
+            "Current (I)"
+        ],
+        "Units": [
+            "Ampere (A)"
+        ],
+        "Derived from": [
+            "[[Current]] = [[Charge]] / [[Time]]",
+            "[[Current]] = [[Voltage]] / [[Resistance]]",
+            "[[Current]] = [[Voltage]] · [[Conductance]]",
+            "[[Current]] = [[Surface Current Density]] · [[Area]]"
+        ],
+        "Part of": [
+            "[[Charge]] = [[Current]] · [[Time]]",
+            "[[Voltage]] = [[Current]] · [[Resistance]]",
+            "[[Surface Current Density]] = [[Current]] / [[Area]]"
+        ],
+        "Used in": [],
+        "Examples": []
+    },
+    "Amount": {
+        "Representations": [
+            "Moles (mol) [scalar] [state]",
+            "Number (n) [scalar] [state]"
+        ],
+        "Units": [
+            "Gram-mole (mol)(g-mol)",
+            "Pound-mole (lb-mol) = 453.59 mol",
+            "\t1 mol = 0.0022046 lb-mol"
+        ],
+        "Derived from": [
+            "[[Amount]] = [[Molar Flow]] / [[Time]]"
+        ],
+        "Part of": [
+            "[[Molar Mass]] = ([[Mass]] / 1000) / [[Amount]]",
+            "[[Molar Concentration]] = [[Amount]] / [[Volume]]",
+            "[[Molar Flow]] = [[Amount]] / [[Time]]"
+        ],
+        "Used in": [],
+        "Examples": [
+            "6.022·10^{23}\t\t[[Avogadro's Number]]"
+        ]
+    },
+    "Luminous Intensity": {
+        "Representations": [
+            "Luminous intensity (Iᵥ)"
+        ],
+        "Units": [
+            "Candela (cd)"
+        ],
+        "Derived from": [
+            "[[Luminous Intensity]] = [[Luminance]] · [[Area]]"
+        ],
+        "Part of": [
+            "[[Luminance]] = [[Luminous Intensity]] / [[Area]]"
+        ],
+        "Used in": [],
+        "Examples": [
+            "100 mW / cm^{2}\t= 1 kW / m^{2}\t\tSunlight intensity on Earth"
+        ]
+    },
+    "Area": {
+        "Representations": [
+            "Area (A)",
+            "Area (a)"
+        ],
+        "Units": [
+            "Square meter (m^{2})",
+            "Acre (acre) = 4046.8564 m^{2}",
+            "Hectare (?) = 10000 m^{2}"
+        ],
+        "Derived from": [
+            "[[Area]] = [[Length]] · [[Length]]",
+            "[[Area]] = [[Luminous Intensity]] / [[Luminance]]",
+            "[[Area]] = [[Current]] / [[Surface Current Density]]"
+        ],
+        "Part of": [
+            "[[Length]] = [[Area]] / [[Length]]",
+            "[[Pressure]] = [[Force]] / [[Area]]",
+            "[[Luminance]] = [[Luminous Intensity]] / [[Area]]",
+            "[[Surface Current Density]] = [[Current]] / [[Area]]"
+        ],
+        "Used in": [],
+        "Examples": []
+    },
+    "Velocity": {
+        "Representations": [
+            "Velocity (v) [vector] [state]",
+            "Speed (s) [scalar] [state]"
+        ],
+        "Units": [
+            "Meter per second (m / s)",
+            "Kilometer per hour (km / h) = 0.277778 m / s",
+            "Feet per second (ft / s) = 0.3048 m / s",
+            "Mile per hour (mph) = 0.44704 m / s",
+            "Knot = 0.514444 m / s",
+            "Mach"
+        ],
+        "Derived from": [
+            "[[Velocity]] = [[Length]] / [[Time]]",
+            "[[Velocity]] = [[Length|Position]] (Dₓ [[Time]])",
+            "[[Velocity]] = ∫ [[Acceleration]] (d [[Time]])",
+            "[[Velocity]] = [[Momentum]] / [[Mass]]"
+        ],
+        "Part of": [
+            "[[Acceleration]] = [[Velocity]] / [[Time]]",
+            "[[Power]] = [[Force]] · [[Velocity]]",
+            "[[Momentum]] = [[Mass]] · [[Velocity]]"
+        ],
+        "Used in": [],
+        "Examples": [
+            "1·10^{5}\tv_{therm} of electrons in a wire",
+            "1·10^{-3}\tv_{drift} of electrons due to an electric field"
+        ]
+    },
+    "Linear Mass Density": {
+        "Representations": [
+            "Linear mass density (d)",
+            "1D mass density (λ)"
+        ],
+        "Units": [
+            "(kg / m)"
+        ],
+        "Derived from": [
+            "[[Linear Mass Density]] = [[Mass]] / [[Length]]",
+            "[[Linear Mass Density]] = [[Surface Mass Density]] · [[Length]]"
+        ],
+        "Part of": [
+            "[[Mass]] = [[Linear Mass Density]] / [[Length]]",
+            "[[Length]] = [[Mass]] / [[Linear Mass Density]]",
+            "[[Surface Mass Density]] = [[Linear Mass Density]] / [[Length]]"
+        ],
+        "Used in": [],
+        "Examples": []
+    },
+    "Molar Mass": {
+        "Representations": [
+            "Molar mass"
+        ],
+        "Units": [
+            "Dalton (Da)(g / mol)"
+        ],
+        "Derived from": [
+            "[[Molar Mass]] = ([[Mass]] / 1000) / [[Amount]]"
+        ],
+        "Part of": [
+            "[[Amount]] = ([[Mass]] / 1000) / [[Molar Mass]]"
+        ],
+        "Used in": [],
+        "Examples": []
+    },
+    "Molar Flow": {
+        "Representations": [
+            "Molar flow rate (ṅ)"
+        ],
+        "Units": [
+            "Moles per second (mol / s)"
+        ],
+        "Derived from": [
+            "[[Molar Flow]] = [[Amount]] / [[Time]]"
+        ],
+        "Part of": [
+            "[[Amount]] = [[Molar Flow]] / [[Time]]",
+            "[[Time]] = [[Amount]] / [[Molar Flow]]"
+        ],
+        "Used in": [],
+        "Examples": []
+    },
+    "Mass Flow": {
+        "Representations": [
+            "Mass flow rate (ṁ)"
+        ],
+        "Units": [
+            "Kilograms per second (kg / s)"
+        ],
+        "Derived from": [
+            "[[Mass Flow]] = [[Mass]] / [[Time]]"
+        ],
+        "Part of": [
+            "[[Mass]] = [[Mass Flow]] · [[Time]]",
+            "[[Time]] = [[Mass]] / [[Mass Flow]]"
+        ],
+        "Used in": [],
+        "Examples": []
+    },
+    "Charge": {
+        "Representations": [
+            "Charge (Q)",
+            "Charge (q)"
+        ],
+        "Units": [
+            "Coulomb (C) (A * s)"
+        ],
+        "Derived from": [
+            "[[Charge]] = [[Current]] · [[Time]]",
+            "[[Charge]] = [[Energy]] / [[Voltage]]"
+        ],
+        "Part of": [
+            "[[Current]] = [[Charge]] / [[Time]]",
+            "[[Electric Field]] = [[Force]] / [[Charge]]"
+        ],
+        "Used in": [
+            "[[Coulomb's Law]]",
+            "[[Electrostatic Constant]]"
+        ],
+        "Examples": [
+            "-1.602 e-19\tcharge of one electron",
+            "1.602 e-19\tcharge of one proton"
+        ]
+    },
+    "Frequency": {
+        "Representations": [
+            "Frequency (μ)"
+        ],
+        "Units": [
+            "Hertz (Hz)(1 / s)"
+        ],
+        "Derived from": [
+            "[[Frequency]] = 1 / [[Time]]",
+            "[[Frequency]] = (2 · π) / [[Time|Period]]"
+        ],
+        "Part of": [],
+        "Examples": [
+            ""
+        ],
+        "Used in": [
+            "[[Simple Harmonic Motion]]"
+        ]
+    },
+    "Angle": {
+        "Representations": [
+            "Plane Angle (θ) [scalar] [state]",
+            "Solid Angle",
+            "Phase (Φ) [scalar] [state]",
+            "∠ ∡ ∢"
+        ],
+        "Units": [
+            "Radian (rad)",
+            "Steradian (sr) = 1 rad",
+            "Degree (°) = 0.0174532925 rad",
+            "Revolution (rev) = 2π rad",
+            "Arcminute (arcmin) = 0.000290888208666 rad",
+            "Arcsecond (arcsec) = 0.0000048481368111 rad"
+        ],
+        "Derived from": [
+            "[[Angle]] = [[Length]] / [[Length]]"
+        ],
+        "Part of": [
+            "[[Angular Velocity]] = [[Angle]] / [[Time]]",
+            "[[Length|Arc Length]] = [[Length|Radius]] · [[Angle]]"
+        ],
+        "Used in": [],
+        "Examples": [
+            ""
+        ]
+    },
+    "Magnetic Field Strength": {
+        "Representations": [
+            "Magnetic field strength (H)"
+        ],
+        "Units": [
+            "Amperes per meter (A / m)"
+        ],
+        "Derived from": [
+            "[[Magnetic Field Strength]] = [[Current]] / [[Length]]"
+        ],
+        "Part of": [],
+        "Used in": [],
+        "Examples": []
+    },
+    "Volume": {
+        "Representations": [],
+        "Derived from": [
+            "[[Volume]] = [[Length]] · [[Length]] · [[Length]]",
+            "[[Volume]] = [[Area]] · [[Length]]",
+            "[[Volume]] = [[Mass]] / [[Volumetric Mass Density]]"
+        ],
+        "Part of": [
+            "[[Volumetric Mass Density]] = [[Mass]] / [[Volume]]",
+            "[[Molar Concentration]] = [[Amount]] / [[Volume]]",
+            "[[Number Density]] = [[Amount]] / [[Volume]]",
+            "[[Energy]] = [[Pressure]] · [[Volume]]",
+            "[[Density]] = 1 / [[Volume]]"
+        ],
+        "Used in": [
+            "[[Gas Constant]]",
+            "[[Clausius-Clapeyron]]",
+            "[[Equilibrium Constants]]",
+            "[[Ideal Gas Law]]"
+        ],
+        "Examples": [],
+        "Units": [
+            "Cubic meter (m³)",
+            "Fluid ounce (oz) = 0.0000295735295625 m³",
+            "Pint (?) = 0.000473176473 m³",
+            "Quart (?) = 0.000946352946 m³",
+            "Liter (L) = 0.001 m³784",
+            "Gallon (?) = 0.003785411784 m³"
+        ]
+    },
+    "Acceleration": {
+        "Types": [
+            "Acceleration (a) [vector] [state]",
+            "Tangential Acceleration (a_{tan}) [scalar] [state]",
+            "\ta_{tan} = α * r",
+            "Radial Acceleration (a_{rad}) [scalar] [state]",
+            "\ta_{rad} = ω^{2} * r"
+        ],
+        "Units": [
+            "Meter per second squared (m / s^{2})"
+        ],
+        "Used in": [
+            "[[Force]]"
+        ],
+        "Calculated by": [
+            "[[Length]] / [[Time]] / [[Time]]",
+            "[[Velocity]] / [[Time]]",
+            "d/d[[Time|t]] [[Velocity]]",
+            ""
+        ]
+    },
+    "Surface Mass Density": {
+        "Representations": [
+            "2D mass density (σ)"
+        ],
+        "Units": [
+            "(kg / m²)"
+        ],
+        "Used in": [],
+        "Part of": [
+            "[[Mass]] = [[Surface Mass Density]] / [[Area]]",
+            "[[Area]] = [[Mass]] / [[Surface Mass Density]]",
+            "[[Linear Mass Density]] = [[Surface Mass Density]] · [[Length]]"
+        ],
+        "Examples": [
+            ""
+        ],
+        "Derived from": [
+            "[[Surface Mass Density]] = [[Mass]] / [[Area]]",
+            "[[Surface Mass Density]] = [[Linear Mass Density]] / [[Length]]"
+        ]
+    },
+    "Angular Velocity": {
+        "Types": [
+            "Angular Velocity (ω) [vector] [state]"
+        ],
+        "Units": [
+            "Radian per second (rad / s)",
+            "Revolutions per second (rps) = 2π rad / s",
+            "Revolutions per minute (rpm) = π / 30 rad / s"
+        ],
+        "Used in": [
+            "[[Angular Acceleration]]",
+            "[[Velocity]]"
+        ],
+        "Calculated by": [
+            "[[Angular Velocity]] = [[Angle]] / [[Time]]",
+            "[[Angular Velocity]] = [[Velocity]] / [[Length]]"
+        ]
+    },
+    "Surface Current Density": {
+        "Representations": [],
+        "Part of": [
+            "[[Current]] = [[Surface Current Density]] · [[Area]]",
+            "[[Area]] = [[Current]] / [[Surface Current Density]]"
+        ],
+        "Used in": [],
+        "Units": [],
+        "Derived from": [
+            "[[Surface Current Density]] = [[Current]] / [[Area]]"
+        ],
+        "Examples": []
+    },
+    "Luminance": {
+        "Representations": [
+            "Luminance (Lᵥ)",
+            "Illuminance (Eᵥ)",
+            "Luminous exitance (Mᵥ)",
+            "Luminous emittance (Mᵥ)"
+        ],
+        "Units": [
+            "Nit (cd / m^{2})",
+            "Lux (lx)"
+        ],
+        "Derived from": [
+            "[[Luminance]] = [[Luminous Intensity]] / [[Length]]²",
+            "[[Luminance]] = [[Luminous Intensity]] / [[Area]]"
+        ],
+        "Part of": [
+            "[[Luminous Intensity]] = [[Luminance]] · [[Area]]",
+            "[[Area]] = [[Luminous Intensity]] / [[Luminance]]"
+        ],
+        "Used in": [],
+        "Examples": []
+    },
+    "Viscosity": {
+        "Representations": [
+            "Viscosity (μ)"
+        ],
+        "Derived from": [
+            "[[Viscosity]] = [[Mass]] / [[Length]] / [[Time]]",
+            "[[Viscosity]] = Shear Modulus · [[Time]]",
+            "[[Viscosity]] = 1 / Fluidity"
+        ],
+        "Part of": [],
+        "Units": [
+            "Poiseuille (Pa · s) (kg / m / s)"
+        ],
+        "Used in": [],
+        "Examples": []
+    },
+    "Kinematic Viscosity": {
+        "Representations": [
+            "Kinematic Viscosity (ν)"
+        ],
+        "Units": [
+            "Stoke (St) (m² / s)"
+        ],
+        "Derived from": [
+            "[[Kinematic Viscosity]] = [[Length]]² / [[Time]]"
+        ],
+        "Part of": [],
+        "Used in": [],
+        "Examples": []
+    },
+    "Force": {
+        "Representations": [
+            "Force (F)"
+        ],
+        "Units": [
+            "Newton (N) (m · kg / s^{2})",
+            "Dyne (dyn) (g · cm / s^{2}) = 10^{-5} N",
+            "Pound-force (lb_{f}) ([[Gravity Constant]] · lb_{m}) = 4.448222 N"
+        ],
+        "Derived from": [
+            "[[Force]] = [[Length]] · [[Mass]] / [[Time]] / [[Time]]",
+            "[[Force]] = [[Mass]] · [[Acceleration]]",
+            "[[Force]] = [[Energy]] (Dₓ [[Length]])",
+            "[[Force]] = [[Momentum]] (Dₓ [[Time]])"
+        ],
+        "Part of": [
+            "[[Energy]] = ∫ [[Force]] (d [[Length]])",
+            "[[Energy]] = [[Force]] · [[Length]]",
+            "[[Torque]] =  [[Force]] × [[Length]]",
+            "[[Momentum]] = ∫ [[Force]] (d [[Time]])",
+            "[[Pressure]] = [[Force]] / [[Area]]",
+            "[[Power]] = [[Force]] · [[Velocity]]"
+        ],
+        "Used in": [
+            "[[Coulomb's Law]]"
+        ],
+        "Examples": [
+            "8.9·10^{-30}\tweight of an electron",
+            "1\t\tweight of average apple on earth",
+            "9.8\t\tweight of 1 kg object on earth",
+            "720\t\thuman bite, at molars",
+            "45·10^{3}\t\tengine of a small car at peak acceleration",
+            "1.9·10^{6}\t\tweight of largest blue whale on earth",
+            "35·10^{6}\t\tthrust of Saturn V rocket"
+        ]
+    },
+    "Pressure": {
+        "Representations": [
+            "Pressure (p)",
+            "Stress",
+            "Osmotic pressure (Π)"
+        ],
+        "Units": [
+            "Pascal (Pa)(kg / m / s^{2})",
+            "Millimeter of Mercury (mmhg) = 133.3 Pa",
+            "Torr (torr) = 133.3 Pa",
+            "Pound per square inch (PSI)(lb_{f} / in^{2}) = 6894.757 Pa",
+            "Bar (bar) = 100000 Pa",
+            "Atmosphere (atm) = 101325 Pa",
+            "_ (dynes / cm^{2})",
+            "1 atm = 1.01325 bars = 14.7 lb_{f} / in^{2} = 760 mm Hg = 33.9 ft H_{2}O = 1.01325_{E}5 Pa"
+        ],
+        "Derived from": [
+            "[[Pressure]] = [[Mass]] / [[Length]] / [[Time]]²",
+            "[[Pressure]] = [[Force]] / [[Area]]",
+            "p = p_{0} + ρ * g * d",
+            "p = [[Pressure]] at measurement",
+            "p_{0} = surface [[Pressure]] of fluid",
+            "ρ = [[Volumetric Mass Density]] of fluid",
+            "g = [[Gravity Constant]]",
+            "d = [[Length|Depth]] of measurement"
+        ],
+        "Part of": [
+            "[[Energy]] = [[Pressure]] · [[Volume]]"
+        ],
+        "Used in": [
+            "[[Bernoulli's Equation]]"
+        ],
+        "Examples": []
+    },
+    "Volumetric Mass Density": {
+        "Units": [
+            "Kilogram per cubic meter (kg / m^{3})"
+        ],
+        "Used in": [],
+        "Calculated by": [
+            "[[Mass]] / [[Length]] / [[Length]] / [[Length]]",
+            "[[Mass]] / [[Volume]]",
+            "1 / [[Specific Volume]]"
+        ]
+    },
+    "Molar Concentration": {
+        "Representations": [
+            "Molar concentration (c)"
+        ],
+        "Units": [
+            "Molarity (M) (mol / L) (mol / m^{3})"
+        ],
+        "Derived from": [
+            "[[Molar Concentration]] = [[Amount]] / [[Volume]]"
+        ],
+        "Part of": [],
+        "Used in": [],
+        "Examples": []
+    },
+    "Angular Acceleration": {
+        "Types": [
+            "Angular Acceleration (α) [vector] [state]"
+        ],
+        "Units": [
+            "Radian per second squared (rad / s^{2})"
+        ],
+        "Used in": [
+            "[[Acceleration]]"
+        ],
+        "Calculated by": [
+            "[[Angle]] / [[Time]] / [[Time]]",
+            "[[Angular Velocity]] / [[Time]]",
+            ""
+        ]
+    },
+    "Number Density": {
+        "Units": [
+            "Number per volume (n / m^{3})"
+        ],
+        "Used in": [],
+        "Examples (in _)": [],
+        "Calculated by": [
+            "[[Number Density]] = [[Amount]] / [[Volume]]"
+        ]
+    },
+    "Charge Density (volumetric)": {
+        "Used in": [
+            "[[Charge Density (volumetric)]] = [[Charge]] / [[Density]]"
+        ]
+    },
+    "Specific Volume": {
+        "Units": [
+            "Cubic meter per kilogram (m^{3} / kg)"
+        ],
+        "Used in": [],
+        "Calculated by": [
+            "[[Length]] * [[Length]] * [[Length]] / [[Mass]]",
+            "[[Volume]] / [[Mass]]",
+            "1 / [[Volumetric Mass Density]]"
+        ]
+    },
+    "Energy": {
+        "Representations": [
+            "Energy (E)",
+            "Enthalpy (H) [state]",
+            "Kinetic Energy (KE)",
+            "Potential Energy (PE, U)",
+            "Work (W) [scalar] [state]",
+            "Heat (H) [scalar] [state]"
+        ],
+        "Units": [
+            "Joule (J) (kg · m² / s²) (N · m)",
+            "Calorie (cal) = 4.18400 J",
+            "British Thermal Unit (BTU) = 1055.05585 J",
+            "Kilowatt hour (kWh) = 3600000 J"
+        ],
+        "Dimensionally equivalent": [
+            "[[Torque]]"
+        ],
+        "Derived from": [
+            "[[Energy]] = [[Mass]] · [[Length]]² / [[Time]]²",
+            "[[Energy]] = [[Mass]] · [[Velocity]]²",
+            "[[Energy]] = [[Momentum]] · [[Velocity]]",
+            "[[Energy]] = [[Pressure]] · [[Volume]]",
+            "[[Energy]] = ∫ [[Force]] (d [[Length]])",
+            "[[Energy]] = ∫ [[Power]] (d [[Time]])",
+            "[[Energy]] = [[Charge]]² / [[Capacitance]]",
+            "[[Energy]] = [[Capacitance]] · [[Voltage]]²",
+            "[[Energy]] = [[Charge]] · [[Voltage]]",
+            "[[Energy]] = [[Torque]] · [[Angle]]"
+        ],
+        "Part of": [
+            "[[Power]] = [[Energy]] / [[Time]]",
+            "[[Power]] = [[Energy]] · (d / d[[Time]])",
+            "[[Torque]] = [[Energy]] / [[Angle]]",
+            "[[Entropy]]"
+        ],
+        "Used in": [
+            "[[Kinetic Energy]]",
+            "[[Gravimetric Potential Energy]]",
+            "[[Spring Potential Energy]]",
+            "[[Inertia]]",
+            "[[Rydberg Equation]]",
+            "[[Electromagnetic Waves]]",
+            "[[Gibbs Free Energy]]"
+        ],
+        "Examples": [
+            "1.6 e-19\t\t1 eV (electronvolt)",
+            "{{.\\equation.png?type=equation}}"
+        ]
+    },
+    "Momentum": {
+        "Representations": [
+            "Momentum (p) [vector]",
+            "Impulse (J)(Δp) [vector]"
+        ],
+        "Units": [
+            "Kilogram meter per second (kg * m / s) (N * s)"
+        ],
+        "Derived from": [
+            "[[Momentum]] = [[Mass]] · [[Length]] / [[Time]]",
+            "[[Momentum]] = [[Mass]] · [[Velocity]]",
+            "[[Momentum]] = ∫ [[Force]] (d [[Time]])"
+        ],
+        "Part of": [
+            "[[Force]] = [[Momentum]] (Dₓ [[Time]])",
+            "[[Energy]] = [[Momentum]] · [[Velocity]]",
+            "[[Velocity]] = [[Momentum]] / [[Mass]]"
+        ],
+        "Used in": [],
+        "Examples": []
+    },
+    "Electric Field": {
+        "Units": [
+            "Newtons per Coulomb (N / C)",
+            "\tVolts per meter (V / m)"
+        ],
+        "Used in": [],
+        "Examples": [
+            "614 V / m\t\tSunlight Electric Field Strength on Earth",
+            "3e6 V / m\t\tDielectric breakdown of air on Earth"
+        ],
+        "Calculated by": [
+            "[[Electric Field]] = [[Force]] / [[Charge]]",
+            "[[Electric Field]] = [[Voltage]] / [[Length]]"
+        ]
+    },
+    "Torque": {
+        "Representations": [
+            "Torque (τ) [vector] [state]"
+        ],
+        "Units": [
+            "Newton-meter (N · m)",
+            "Pound-foot (lb_{f} · ft)"
+        ],
+        "Dimensionally equivalent": [
+            "[[Energy]]"
+        ],
+        "Derived from": [
+            "[[Torque]] = [[Mass]] · [[Length]]² / [[Time]]² / [[Angle]]",
+            "[[Torque]] = [[Force]] × [[Length]]",
+            "[[Torque]] = [[Inertia]] · [[Angular Acceleration]]",
+            "[[Torque]] = [[Angular Momentum]] (Dₓ [[Time]])",
+            "[[Torque]] = [[Energy]] / [[Angle]]"
+        ],
+        "Part of": [
+            "[[Energy]] = [[Torque]] · [[Angle]]"
+        ],
+        "Used in": [
+            "[[:Magnetic Dipole Moment]]"
+        ],
+        "Examples": [
+            ""
+        ]
+    },
+    "Power": {
+        "Types": [
+            "Power (P) [scalar] [state]"
+        ],
+        "Units": [
+            "Watt (W)(kg * m^{2} / s^{3})(J / s)",
+            "BTU per minute (BTU/min) = 17.584267 W",
+            "Horsepower (HP) = 745.699872 W"
+        ],
+        "Used in": [
+            "[[Voltage]]"
+        ],
+        "Calculated by": [
+            "[[Power]] = [[Mass]] · [[Length]]² / [[Time]]³",
+            "[[Power]] = [[Energy]] / [[Time]]",
+            "[[Power]] = [[Force]] · [[Velocity]]",
+            "[[Power]] = [[Energy]] · (d / d[[Time]])",
+            "[[Power]] = [[Current]] · [[Voltage]]",
+            "[[Power]] = [[Current]]^{2} · [[Resistance]]",
+            "[[Power]] = [[Voltage]]^{2} / [[Resistance]]"
+        ],
+        "Values": [
+            "12-20 W\tHuman brain",
+            "4 kW\tPre-industrial water wheel",
+            "1-2 kW\tPre-industrial wind mill"
+        ]
+    },
+    "Entropy": {
+        "Types": [
+            "High entropy is characterized by a large number of ways of arranging molecules that are identical (a sandy beach pretty much the same no matter how many grains you exchange places)",
+            "Entropy (S)"
+        ],
+        "Units": [
+            "Entropy (kg * m^{2} / s^{2} / K)(J / K)"
+        ],
+        "Used in": [
+            "[[Entropy]] / [[Mass]] (m^{2} / s^{2} / K)",
+            "[[Entropy]] / [[Amount]] (kg * m^{2} / s^{2} / K / mol)"
+        ],
+        "Calculated by": [
+            "[[Mass]] * [[Length]] * [[Length]] / [[Time]] / [[Time]] / [[Temperature]]",
+            "[[Energy]] / [[Temperature]]",
+            ""
+        ]
+    },
+    "Voltage": {
+        "Representations": [
+            "Electric Potential Difference (ΔV) (between two points; meaningless at only one point)"
+        ],
+        "Units": [
+            "Volt (V) (J / C) (kg · m^{2} / s^{3} / A)"
+        ],
+        "Derived from": [
+            "[[Voltage]] = [[Mass]] · [[Length]] · [[Length]] / [[Time]] / [[Time]] / [[Time]] / [[Current]]",
+            "[[Voltage]] = [[Energy]] / [[Charge]]",
+            "[[Voltage]] = [[Power]] / [[Current]]",
+            "[[Voltage]] = [[Electric Field]] · [[Length]]"
+        ],
+        "Part of": [],
+        "Used in": [],
+        "Examples": []
+    },
+    "Capacitance": {
+        "Units": [
+            "Farad (f) (C / V)"
+        ],
+        "Used in": [],
+        "Examples (in _)": [],
+        "Calculated by": [
+            "[[Capacitance]] = [[Charge]] / [[Voltage]]",
+            "[[Capacitance]] = [[Charge]]^{2} / [[Energy]]"
+        ]
+    },
+    "Resistance": {
+        "Units": [
+            "Ohm (Ω) (kg · m^{2} / s^{3} / A^{2})"
+        ],
+        "Used in": [],
+        "Examples (in _)": [],
+        "Calculated by": [
+            "[[Resistance]] = [[Mass]] · [[Length]]^{2} / [[Time]]^{3} / [[Current]]^{2}",
+            "[[Resistance]] = 1 / [[Conductance]]",
+            "[[Resistance]] = [[Voltage]] / [[Current]]",
+            "[[Resistance]] = [[Energy]] / [[Time]] / [[Current]]^{2}",
+            "[[Resistance]] = [[Mass]] · [[Length]]^{2} / [[Time]] / [[Charge]]^{2}",
+            "[[Resistance]] = [[Energy]] · [[Time]] / [[Charge]]^{2}",
+            "[[Resistance]] = [[Time]] / [[Capacitance]]",
+            "[[Resistance]] = [[Voltage]]^{2} / [[Power]]",
+            "[[Resistance]] = [[Power]] / [[Current]]^{2}"
+        ]
+    },
+    "Conductance": {
+        "Units": [
+            "Siemens (S) (s^{3} · A^{2} / kg / m^{2})",
+            "\tMho"
+        ],
+        "Used in": [],
+        "Examples (in _)": [],
+        "Calculated by": [
+            "[[Conductance]] = [[Time]]^{3} · [[Current]]^{2} / [[Mass]] / [[Length]]^{2}",
+            "[[Conductance]] = 1 / [[Resistance]]",
+            "[[Conductance]] = [[Current]] / [[Voltage]]"
+        ]
+    },
+    "Electric Flux": {
+        "Units": [
+            "Newton meters squared per coulomb (N · m^{2} / C)",
+            "\tVolt meter (V · m)"
+        ],
+        "Used in": [],
+        "Examples (in _)": [],
+        "Calculated by": [
+            "[[Electric Flux]] = [[Electric Field]] · [[Area]] · cos([[Angle]])",
+            "[[Electric Flux]] = ∯[[Electric Field]] · d[[Area]]"
+        ]
+    },
+    "Moment": {
+        "Types": [
+            "A physical quantity multiplied by a distance",
+            "[[Force]]",
+            "1st : [[Torque]] (r · F)",
+            "[[Mass]]",
+            "0th : Total [[Mass]] (r⁰ · m)",
+            "1st : Center of [[Mass]] times total [[Mass]] (r · m)",
+            "2nd : [[Inertia]] (r² · m)",
+            ""
+        ]
+    },
+    "Field": {
+        "Types": [
+            "A quantity with a value at each point in space",
+            "(vector field, temperature field, gravitational field, etc)"
+        ],
+        "Units": [],
+        "Used in": [],
+        "Calculated by": []
+    },
+    "Beauty": {
+        "Units": [
+            "millihelen (mh) : The amount of beauty required to launch one ship."
+        ],
+        "Used in": [],
+        "Calculated by": [
+            ""
+        ]
+    },
+    "Shenanigans": {
+        "Units": [
+            "Farva (Fv)"
+        ],
+        "Used in": [],
+        "Calculated by": [
+            ""
+        ]
+    }
+}

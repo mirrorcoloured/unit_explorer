@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script type="text/javascript" src="./visjs/vis-network.min.js"></script>
+        <link href="./visjs/vis-network.min.css" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" href="unit_explorer.css">
+    </head>
+    <body>
+        <div class="row">
+            <div id="left" class="column">
+                <div id="graph"></div>
+            </div>
+            <div id="right" class="column">
+                <button id="test">TEST</button>
+                <input id="hide-disconnected" type="checkbox" checked></input><span>Hide disconnected</span>
+                <input id="power_min" value="1">
+                <input id="power_max" value="2">
+                <table id="menu">
+                    <!-- <tr><th>Basis</th><th>Unit</th></tr> -->
+                    <tr><td><input id="invert-operator" type="checkbox" checked></td><td>Invert (^-1)</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <script src="./numjs.min.js"></script>
+        <script type="module" src="unit_explorer.js"></script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+#left {
+    left: 0;
+    width: 80%;
+}
+
+#right {
+
+}
+
+body {
+    background-color: palegoldenrod;
+}
+
+#graph {
+    height: 100%;
+}
+
+#menu {
+    /* display: block;
+    position: fixed; */
+}

@@ -1,0 +1,51 @@
+Id,Unit,Symbol,Composition
+1,Length,l,l
+2,Mass,m,m
+3,Time,t,t
+4,Temperature,T,T
+5,Amount,n,n
+6,Current,i,i
+7,Luminous Intensity,y,y
+8,Area,A,ll
+9,Velocity,s,l/t
+10,Angle,θ,θ
+11,Acceleration,a,l/tt
+12,Volume,v,lll
+13,Force,F,lm/tt
+14,Energy,E,llm/tt
+15,Power,P,llm/ttt
+16,Volumetric Mass Density,ρ,m/lll
+17,Mass Flow,ṁ,m/t
+18,Molar Mass,m̂,m/n
+19,Momentum,u,ml/t
+20,Angular Momentum,L,θml/t
+21,Voltage,V,llm/ttti
+22,Resistance,R,llm/tttii
+23,Capacitance,C,iitttt/llm
+24,Frequency,f,/t
+25,Molar Flow,ṅ,n/t
+26,Angular Velocity,ω,θ/t
+27,Angular Acceleration,α,θ/tt
+28,Charge,Q,it
+29,Entropy,S,llm/ttT
+30,Conductance,G,iittt/llm
+31,Surface Current Density,j,i/ll
+32,Molar Concentration,c,n/lll
+33,Luminance,L,y/ll
+34,Pressure,p,m/ltt
+35,Linear Mass Density,ḋ,m/l
+36,Surface Mass Density,Ḋ,m/ll
+37,Electric Field,Ê,lm/ittt
+38,Magnetic Field Strength,H,i/l
+39,Density,D,/lll
+40,Viscosity,μ,m/lt
+41,Kinematic Viscosity,ν,ll/t
+42,Torque,τ,llm/tt
+43,Specific Volume,V̂,lll/m
+44,Charge Density,q,it/lll
+45,Electric Flux,e,lllm/ttti
+46,Luminous energy,ẏ,yt
+47,Flux,Ω,θθ
+48,Luminous Flux,Φ,yθθ
+49,Luminous Energy,Q̇,yθθt
+50,Illuminance,V̅,yθθ/ll
