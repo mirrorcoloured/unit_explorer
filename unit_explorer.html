@@ -11,14 +11,21 @@
                 <div id="graph"></div>
             </div>
             <div id="right" class="column">
-                <button id="test">TEST</button>
-                <input id="hide-disconnected" type="checkbox" checked></input><span>Hide disconnected</span>
-                <input id="power_min" value="1">
-                <input id="power_max" value="2">
-                <table id="menu">
-                    <!-- <tr><th>Basis</th><th>Unit</th></tr> -->
-                    <tr><td><input id="invert-operator" type="checkbox" checked></td><td>Invert (^-1)</td></tr>
-                </table>
+                <div class="row">
+                    <button id="test">TEST</button>
+                </div>
+                <div class="row">
+                    <input id="hide-disconnected" type="checkbox" checked></input>
+                    <span>Hide disconnected nodes</span>
+                </div>
+                <div class="row">
+                    <span>Max Power</span>
+                    <input id="power_max" type="range" value="2" min="0" max="6">
+                    <input id="power_max_num" value="2">
+                </div>
+                <div class="row">
+                    <table id="menu"></table>
+                </div>
             </div>
         </div>
 

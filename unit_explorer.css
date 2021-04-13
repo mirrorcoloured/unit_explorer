@@ -25,6 +25,15 @@ body {
 
 #graph {
     height: 100%;
+    border: 1px solid black;
+}
+
+.tablesection {
+    font-weight: bold;
+}
+
+table, tr, th, td {
+    border: 1px solid #bbbbbb;
 }
 
 #menu {
