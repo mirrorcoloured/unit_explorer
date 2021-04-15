@@ -28,7 +28,7 @@ export function loadCSVtoAoA(file, callback) {
     })
 }
 
-function CSV2AoA(allText) {
+export function CSV2AoA(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
     var headers = allTextLines[0].split(',');
     var lines = [];
@@ -47,7 +47,7 @@ function CSV2AoA(allText) {
     // alert(lines);
 }
 
-function CSV2AoO(csv_text, linedelim="\n", valdelim=","){
+export function CSV2AoO(csv_text, linedelim="\n", valdelim=","){
     const lines = csv_text.split(linedelim);
     let result = [];
     const headers = lines[0].split(valdelim).map(h => h.trim());
