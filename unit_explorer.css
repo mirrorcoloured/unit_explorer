@@ -36,6 +36,12 @@ table, tr, th, td {
     border: 1px solid #bbbbbb;
 }
 
+#unitstext {
+    width: 100%;
+    resize: vertical;
+    height: 50px;
+}
+
 #menu {
     /* display: block;
     position: fixed; */

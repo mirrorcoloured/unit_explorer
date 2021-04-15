@@ -1,21 +1,32 @@
 // https://github.com/nicolaspanel/numjs
 // https://homepages.rpi.edu/~mitchj/handouts/linalg/
 
-import {loadCSVtoAoO, loadJSON} from "./load_file.js";
+import {loadCSVtoAoO, CSV2AoO, loadText, loadJSON} from "./load_file.js";
 
 class UnitExplorer {
     constructor(datafile) {
         this.datafile = datafile;
-        loadCSVtoAoO(this.datafile, this.init.bind(this));
+
+        if (window.localStorage["units"] && window.localStorage["units"].length > 0) {
+            this.load_text_data(window.localStorage["units"]);
+        } else {
+            loadText(this.datafile, this.load_text_data.bind(this));
+        }
     }
 
-    init(csvdata) {
+    load_text_data(text) {
+        this.rawdata = text;
+        this.data = CSV2AoO(this.rawdata);
+        this.init();
+    }
+
+    init() {
         // run once
-        this.data = csvdata;
 
         document.querySelector("#test").addEventListener("click", this.TEST.bind(this));
 
         this.el_graph = document.querySelector("#graph");
+        this.el_unitstext = document.querySelector("#unitstext");
         this.el_menu = document.querySelector("#menu");
         this.el_hide_disconnected = document.querySelector("#hide-disconnected");
         this.el_power_max_num = document.querySelector("#power_max_num");
@@ -29,6 +40,8 @@ class UnitExplorer {
         this.edges = new vis.DataSet();
         // let edge_obj = {};
 
+        this.el_unitstext.value = this.rawdata;
+
         this.createDimensions();
 
         // add invert operator
@@ -39,7 +52,7 @@ class UnitExplorer {
         this.el_invert_operator.id = "invert-operator";
         this.el_invert_operator.type = "checkbox";
         this.el_invert_operator.value = "^-1";
-        this.el_invert_operator.checked = true;
+        this.el_invert_operator.checked = window.localStorage["invert_checked"];
         inv_label.innerHTML = "Invert (^-1)";
         inv_cell.appendChild(this.el_invert_operator);
         inv_row.appendChild(inv_cell);
@@ -64,6 +77,7 @@ class UnitExplorer {
                 this.hideAllNodes();
             }
             this.updateEdges();
+            window.localStorage["invert_checked"] = this.el_invert_operator.checked;
         }.bind(this))
 
         this.el_power_max_num.addEventListener("input", function() {
@@ -74,6 +88,10 @@ class UnitExplorer {
         this.el_power_max.addEventListener("input", function() {
             this.el_power_max_num.value = this.el_power_max.value;
             this.updateEdges();
+        }.bind(this))
+
+        this.el_unitstext.addEventListener("input", function() {
+            window.localStorage["units"] = this.el_unitstext.value;
         }.bind(this))
 
         // edges.add({
@@ -89,11 +107,14 @@ class UnitExplorer {
         }, {
             physics:{
                 barnesHut: {
-                    springLength: 95,
+                    gravitationalConstant: -2000,
+                    centralGravity: 0.5,
+                    springLength: 200,
                     springConstant: 0.04,
                     damping: 0.09,
-                    avoidOverlap: 0.2,
-            }}
+                    avoidOverlap: 0.1,
+                }
+            }
         });
     }
 
@@ -102,15 +123,22 @@ class UnitExplorer {
     }
 
     createDimensions() {
+        const stored_dims = this.recall_selected_dimensions();
         for (let node of this.data) {
             if (node.Symbol == node.Composition) {
                 this.base_dimensions.push(node.Symbol);
+                // if (!stored_dims) {
+                //     this.selected_dimensions.push(node.Symbol);
+                // }
+            }
+            if (stored_dims && stored_dims.includes(node.Symbol)) {
                 this.selected_dimensions.push(node.Symbol);
             }
         }
-        for (let node of this.data) {
+        for (let [index, node] of this.data.entries()) {
             node.vector = nj.array(this.calculate_dimension(node.Composition));
             node.magnitude = nj.abs(node.vector).sum();
+            node.id = index;
             if (node.Symbol in this.node_obj) {
                 console.log("ERROR, duplicate definition: ", node, this.node_obj[node.Symbol]);
             }
@@ -124,7 +152,7 @@ class UnitExplorer {
             box.type = "checkbox";
             box.value = node.Symbol;
             box.id = `unit-${node.Symbol}`;
-            box.checked = node.Symbol == node.Composition;
+            box.checked = this.selected_dimensions.includes(node.Symbol);
             box.addEventListener("input", function (e) {
                 this.toggle_unit(e.target)
                 this.updateEdges();
@@ -220,10 +248,15 @@ class UnitExplorer {
                         }
                     }
                 }
-
-                // check for inversion
-                if (this.el_invert_operator.checked) {
-                    if (nj.equals(nj.negative(nodea.vector), nodeb.vector) && nodea.Id > nodeb.Id) {
+            }
+        }
+        if (this.el_invert_operator.checked) {
+            for (let nodea of this.data) {
+                for (let nodeb of this.data) {
+                    if (nodea == nodeb) {
+                        continue
+                    }
+                    if (nj.equals(nj.negative(nodea.vector), nodeb.vector) && nodea.id > nodeb.id) {
                         this.edges.add({
                             from: nodea.Unit,
                             to: nodeb.Unit,
@@ -268,6 +301,16 @@ class UnitExplorer {
         if (this.el_hide_disconnected.checked) {
             this.hideAllNodes();
         }
+
+        this.store_selected_dimensions();
+    }
+
+    store_selected_dimensions() {
+        window.localStorage["selected_dimensions"] = this.selected_dimensions;
+    }
+
+    recall_selected_dimensions() {
+        return window.localStorage["selected_dimensions"];
     }
 
     calculate_dimension(dimensionstring) {
