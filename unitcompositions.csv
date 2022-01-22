@@ -5,7 +5,7 @@ Time,T,T
 Temperature,Θ,Θ
 Amount,N,N
 Current,I,I
-Luminous Intensity,J,J
+Luminous Intensity,J,J
 Angle,θ,θ
 Area,A,LL
 Velocity,s,L/T
@@ -16,38 +16,38 @@ Force,F,LM/TT
 Yank,Y,LM/TTT
 Energy,E,LLM/TT
 Power,P,LLM/TTT
-Volumetric Mass Density,ρ,M/LLL
-Mass Flow,ṁ,M/T
-Molar Mass,m̂,M/N
+Volumetric Mass Density,ρ,M/LLL
+Mass Flow,ṁ,M/T
+Molar Mass,m̂,M/N
 Momentum,u,ML/T
-Angular Momentum,£,θMLL/T
+Angular Momentum,£,θMLL/T
 Voltage,V,LLM/TTTI
 Resistance,R,LLM/TTTII
 Capacitance,C,IITTTT/LLM
 Frequency,f,/T
-Molar Flow,ṅ,N/T
-Angular Velocity,ω,θ/T
-Angular Acceleration,α,θ/TT
+Molar Flow,ṅ,N/T
+Angular Velocity,ω,θ/T
+Angular Acceleration,α,θ/TT
 Charge,Q,IT
 Entropy,S,LLM/TTΘ
 Conductance,G,IITTT/LLM
-Surface Current Density,j,I/LL
-Molar Concentration,c,N/LLL
+Surface Current Density,j,I/LL
+Molar Concentration,c,N/LLL
 Luminance,L̅,J/LL
 Pressure,p,M/LTT
-Linear Mass Density,ḋ,M/L
-Surface Mass Density,Ḋ,M/LL
-Electric Field,Ê,LM/ITTT
-Magnetic Field Strength,H,I/L
+Linear Mass Density,ḋ,M/L
+Surface Mass Density,Ḋ,M/LL
+Electric Field,Ê,LM/ITTT
+Magnetic Field Strength,H,I/L
 Density,D,/LLL
 Surface Density,ⅅ,/LL
 Linear Density,Ð,/L
 Viscosity,μ,M/LT
-Kinematic Viscosity,ν,LL/T
+Kinematic Viscosity,ν,LL/T
 Torque,τ,LLM/TT
-Specific Volume,V̂,LLL/M
-Charge Density,q,IT/LLL
-Electric Flux,e,LLLM/TTTI
+Specific Volume,V̂,LLL/M
+Charge Density,q,IT/LLL
+Electric Flux,e,LLLM/TTTI
 Luminous energy,ẏ,JT
 Flux,Ḟ,/LLT
 Mass Flux,φ,M/LLT
