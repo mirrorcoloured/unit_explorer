@@ -1,5 +1,6 @@
 // https://github.com/nicolaspanel/numjs
 // https://homepages.rpi.edu/~mitchj/handouts/linalg/
+// https://en.wikipedia.org/wiki/Dimensional_analysis
 
 import {loadCSVtoAoO, CSV2AoO, loadText, loadJSON} from "./load_file.js";
 
@@ -25,6 +26,7 @@ class UnitExplorer {
 
         document.querySelector("#test").addEventListener("click", this.TEST.bind(this));
 
+        // local definitions of DOM elements
         this.el_graph = document.querySelector("#graph");
         this.el_unitstext = document.querySelector("#unitstext");
         this.el_menu = document.querySelector("#menu");
@@ -32,16 +34,35 @@ class UnitExplorer {
         this.el_power_max_num = document.querySelector("#power_max_num");
         this.el_power_max = document.querySelector("#power_max");
 
+        // bind actions to DOM elements
+        this.el_hide_disconnected.addEventListener("input", function() {
+            if (this.el_hide_disconnected.checked) {
+                this.hideAllNodes();
+                this.updateEdges();
+            } else {
+                this.showAllNodes();
+            }
+        }.bind(this))
+        this.el_power_max_num.addEventListener("input", function() {
+            this.el_power_max = this.el_power_max_num.value;
+            this.updateEdges();
+        }.bind(this))
+        this.el_power_max.addEventListener("input", function() {
+            this.el_power_max_num.value = this.el_power_max.value;
+            this.updateEdges();
+        }.bind(this))
+        this.el_unitstext.addEventListener("input", function() {
+            window.localStorage["units"] = this.el_unitstext.value;
+        }.bind(this))
+
+        // init local variables
         this.base_dimensions = [];
         this.selected_dimensions = [];
-
         this.nodes = new vis.DataSet();
         this.node_obj = {};
         this.edges = new vis.DataSet();
         // let edge_obj = {};
-
         this.el_unitstext.value = this.rawdata;
-
         this.createDimensions();
 
         // add invert operator
@@ -58,20 +79,6 @@ class UnitExplorer {
         inv_row.appendChild(inv_cell);
         inv_row.appendChild(inv_label);
         this.el_menu_subs[0].appendChild(inv_row);
-
-        this.createNodes();
-
-        this.updateEdges();
-
-        this.el_hide_disconnected.addEventListener("input", function() {
-            if (this.el_hide_disconnected.checked) {
-                this.hideAllNodes();
-                this.updateEdges();
-            } else {
-                this.showAllNodes();
-            }
-        }.bind(this))
-
         this.el_invert_operator.addEventListener("input", function() {
             if (this.el_hide_disconnected.checked) {
                 this.hideAllNodes();
@@ -80,27 +87,9 @@ class UnitExplorer {
             window.localStorage["invert_checked"] = this.el_invert_operator.checked;
         }.bind(this))
 
-        this.el_power_max_num.addEventListener("input", function() {
-            this.el_power_max = this.el_power_max_num.value;
-            this.updateEdges();
-        }.bind(this))
-
-        this.el_power_max.addEventListener("input", function() {
-            this.el_power_max_num.value = this.el_power_max.value;
-            this.updateEdges();
-        }.bind(this))
-
-        this.el_unitstext.addEventListener("input", function() {
-            window.localStorage["units"] = this.el_unitstext.value;
-        }.bind(this))
-
-        // edges.add({
-        //     from: "Length",
-        //     to: "Angle",
-        //     arrows: "to",
-        //     label: `/ l`,
-        // });
-
+        // init network
+        this.createNodes();
+        this.updateEdges();
         this.network = new vis.Network(this.el_graph, {
             nodes: this.nodes,
             edges: this.edges,
@@ -325,7 +314,6 @@ class UnitExplorer {
         return dim;
     }
 
-    // TODO find way to stop hidden nodes from participating in physics, or just remove and re-add
     hideNode(node) {
         this.nodes.update({id: node.Unit, hidden: true, physics: false, size: 0});
     }
